@@ -2,37 +2,41 @@ package ru.job4j.converter;
 
 public class Converter {
 
-    public static float RubleToEuro (float value) {
+    public static float rubleToEuro(float value) {
         float rsl = value / 70;
         return rsl;
     }
 
-    public static float RubleToDollar (float value) {
+    public static float rubleToDollar(float value) {
         float rsl = value / 60;
         return rsl;
     }
-    public static float EuroToRubli (float value) {
+
+    public static float euroToRubli(float value) {
         float rsl = value * 70;
         return rsl;
     }
-    public static double EurotoDollar (double value) {
+
+    public static double eurotoDollar(double value) {
         double rsl = 70 / 60 * value;
         return rsl;
     }
-    public static float DollarToRubl (float value) {
+
+    public static float dollarToRubl(float value) {
         float rsl = value * 60;
         return rsl;
     }
+
     public static void main(String[] args) {
-        float euro = Converter.RubleToEuro(140);
+        float euro = Converter.rubleToEuro(140);
         System.out.println("140 rubles are " + euro + " euro.");
-        float dollar = Converter.RubleToDollar(140);
-        System.out.println("140 рублей это " + dollar + " долларов." );
-        float eurotorubl = Converter.EuroToRubli(140);
+        float dollar = Converter.rubleToDollar(140);
+        System.out.println("140 рублей это " + dollar + " долларов.");
+        float eurotorubl = Converter.euroToRubli(140);
         System.out.println("140 Евро это " + eurotorubl + " рублей");
-        double eurovdollar = Converter.EurotoDollar(140);
+        double eurovdollar = Converter.eurotoDollar(140);
         System.out.println("140 Евро это " + eurovdollar +  " долларов");
-        float dollarvrubl = Converter.DollarToRubl(140);
+        float dollarvrubl = Converter.dollarToRubl(140);
         System.out.println("140 Долларов это " + dollarvrubl + " рублей");
     }
 }
