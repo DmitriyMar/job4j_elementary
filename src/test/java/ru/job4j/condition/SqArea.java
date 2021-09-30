@@ -10,7 +10,7 @@ public class SqArea {
         double result1 = SqArea.square(6, 2);
         System.out.println(" p = 6, k = 2, s = 1, real = " + result1);
         double result2 = result1 * 2;
-        System.out.println(" dlina storoni " + result2);
+        System.out.println("  dlina storoni  " + result2);
         double result3 = result1 * result2;
         System.out.println("S = " + result3);
     }
