@@ -49,7 +49,7 @@ public class Converter {
         float expected2 = 140;
         float out3 = Converter.euroToRubli(in2);
         boolean passed2 = expected2 == out3;
-        System.out.println(" Euro to Rubli 2. Test result " + passed2);
+        System.out.println("  Euro to Rubli 2. Test result " + passed2);
         System.out.println("140 Евро это " + eurotorubl + " рублей");
         double eurovdollar = Converter.eurotoDollar(140);
         System.out.println("140 Евро это " + eurovdollar +  " долларов");
