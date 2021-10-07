@@ -42,7 +42,8 @@ public class ConverterTest {
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
     }
-     @Test
+
+    @Test
     public void whenDollarThenRubl() {
         float in = 3;
         float expected = 180;
