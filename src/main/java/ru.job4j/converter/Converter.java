@@ -1,7 +1,5 @@
 package ru.job4j.converter;
 
-//import java.util.function.DoubleToLongFunction;
-
 public class Converter {
 
     public static float rubleToEuro(float value) {
