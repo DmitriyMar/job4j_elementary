@@ -1,6 +1,6 @@
 package ru.job4j.converter;
 
-import java.util.function.DoubleToLongFunction;
+//import java.util.function.DoubleToLongFunction;
 
 public class Converter {
 
