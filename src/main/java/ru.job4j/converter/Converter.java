@@ -65,3 +65,4 @@ public class Converter {
         System.out.println("Dollar to rubl 2. Test result : " + passed4);
     }
 }
+

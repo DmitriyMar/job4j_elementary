@@ -1,8 +1,8 @@
-package ru.job4j.converter;
+package ru.job4j;
 
 import org.junit.Test;
-
 import org.junit.Assert;
+import ru.job4j.converter.Converter;
 
 public class ConverterTest {
 
@@ -51,6 +51,3 @@ public class ConverterTest {
         Assert.assertEquals(expected, out, eps);
     }
 }
-
-
-
