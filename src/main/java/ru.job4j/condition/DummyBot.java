@@ -8,8 +8,6 @@ public class DummyBot {
             rsl = "Привет, Умник.";
         }  else if ("Пока.".equals(questions)) {
             rsl = "До скорой встречи.";
-        }  else if ("       ".equals(questions)) {
-             rsl = "Это ставит меня в тупик!!! ";
         }
        return rsl;
 }
