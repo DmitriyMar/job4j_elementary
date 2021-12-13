@@ -5,9 +5,13 @@ public class ChessBoard {
         int rsl = 0;
         int x = x1 - x2;
         int y = y1 - y2;
-        if (Math.abs(x) == Math.abs(y)) {
-            return rsl;
+        if (x1 >= 0 && x1 <= 7 && y1 >= 0 && y1 <= 7 && x2 >= 7 && x2 <= 7 && y2 >= 7 && y2 <= 7) {
+            return 0;
         }
-        return 0;
+        if (x == Math.abs(y)) {
+            rsl = Math.abs(x);
+        }
+       return rsl;
     }
 }
+
