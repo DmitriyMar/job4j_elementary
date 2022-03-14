@@ -15,7 +15,7 @@ public class CounterTest {
     }
 
     @Test
-    public void whenSum() {
+    public void whenSumEvenNumberFromOneToTwenty() {
         int start = 1;
         int finish = 20;
         int result = Counter.sumByEven(start, finish);
