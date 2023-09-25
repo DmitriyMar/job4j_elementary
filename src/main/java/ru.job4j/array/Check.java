@@ -8,7 +8,7 @@ public class Check {
                 return false;
             }
         }
-            return result;
+            return true;
         }
     }
 
