@@ -41,7 +41,7 @@ class MatrixCheckTest {
     }
 
     @Test
-    public void HasMonoVertical() {
+    public void monoVertical() {
         char[][] input = {
                 {' ', ' ', 'X'},
                 {' ', ' ', 'X'},
