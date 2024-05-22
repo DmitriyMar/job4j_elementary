@@ -30,7 +30,6 @@ public class Fit {
         double manWeight = calculateManWeight(heightMan);
         System.out.println("Optimal weight for a man with height 187 is " + manWeight);
 
-        // Расчет веса женщины и вывод результата
         double womanWeight = calculateWomanWeight(heightWoman);
         System.out.println("Optimal weight for a woman with height 170 is " + womanWeight);
     }

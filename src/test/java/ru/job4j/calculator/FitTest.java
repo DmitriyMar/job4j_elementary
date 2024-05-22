@@ -18,7 +18,6 @@ public class FitTest {
 
     @Test
     public void testCalculateWomanWeightNormalHeight() {
-        // Arrange
         short height = 170;
         double expectedWeight = 63.25;
 
