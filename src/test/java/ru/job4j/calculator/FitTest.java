@@ -1,23 +1,60 @@
 package ru.job4j.calculator;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class FitTest {
 
     @Test
-    public void whenMan180Then92() {
-        short in = 180;
-        double expected = 92;
-        double out = Fit.manWeight(in);
-        Assert.assertEquals(expected, out, 0.01);
+    public void testCalculateManWeightNormalHeight() {
+        // Arrange
+        short height = 187;
+        double expectedWeight = 88.55;
+
+        // Act
+        double actualWeight = Fit.calculateManWeight(height);
+
+        // Assert
+        assertEquals(expectedWeight, actualWeight, 0.01);
     }
 
     @Test
-    public void whenWoman175Then74Dot75() {
-        short in = 175;
-        double expected = 74.75;
-        double out = Fit.womanWeight(in);
-        Assert.assertEquals(expected, out, 0.01);
+    public void testCalculateWomanWeightNormalHeight() {
+        // Arrange
+        short height = 170;
+        double expectedWeight = 63.25;
+
+        // Act
+        double actualWeight = Fit.calculateWomanWeight(height);
+
+        // Assert
+        assertEquals(expectedWeight, actualWeight, 0.01);
+    }
+
+    @Test
+    public void testCalculateManWeightMinimumHeight() {
+        // Arrange
+        short height = 100;
+        double expectedWeight = 0;
+
+        // Act
+        double actualWeight = Fit.calculateManWeight(height);
+
+        // Assert
+        assertEquals(expectedWeight, actualWeight, 0.01);
+    }
+
+    @Test
+    public void testCalculateWomanWeightMinimumHeight() {
+        // Arrange
+        short height = 110;
+        double expectedWeight = 0;
+
+        // Act
+        double actualWeight = Fit.calculateWomanWeight(height);
+
+        // Assert
+        assertEquals(expectedWeight, actualWeight, 0.01);
     }
 }

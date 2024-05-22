@@ -1,22 +1,40 @@
 package ru.job4j.calculator;
 
 public class Fit {
-    public static double manWeight(short height) {
-        return (height - 100) * 1.15;
-}
+    // Константа для коэффициента
+    private static final double WEIGHT_COEFFICIENT = 1.15;
 
-    public static double womanWeight(short height) {
-        return (height - 110) * 1.15;
+    /**
+     * Рассчитывает оптимальный вес для мужчины на основе его роста.
+     *
+     * @param height рост мужчины
+     * @return оптимальный вес для мужчины
+     */
+    public static double calculateManWeight(short height) {
+        return (height - 100) * WEIGHT_COEFFICIENT;
+    }
+
+    /**
+     * Рассчитывает оптимальный вес для женщины на основе ее роста.
+     *
+     * @param height рост женщины
+     * @return оптимальный вес для женщины
+     */
+    public static double calculateWomanWeight(short height) {
+        return (height - 110) * WEIGHT_COEFFICIENT;
     }
 
     public static void main(String[] args) {
-        short height = 187;
-        double man = Fit.manWeight(height);
-        System.out.println("Man 187 is " + man);
-        short heightw = 175;
-        double woman = Fit.womanWeight(height);
-        System.out.println("Woman 175 is " + woman);
-    }
+        short heightMan = 187;
+        short heightWoman = 170;
 
+        // Расчет веса мужчины и вывод результата
+        double manWeight = calculateManWeight(heightMan);
+        System.out.println("Optimal weight for a man with height 187 is " + manWeight);
+
+        // Расчет веса женщины и вывод результата
+        double womanWeight = calculateWomanWeight(heightWoman);
+        System.out.println("Optimal weight for a woman with height 170 is " + womanWeight);
+    }
 }
 
