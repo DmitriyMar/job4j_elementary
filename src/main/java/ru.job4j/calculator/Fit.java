@@ -1,7 +1,6 @@
 package ru.job4j.calculator;
 
 public class Fit {
-    // Константа для коэффициента
     private static final double WEIGHT_COEFFICIENT = 1.15;
 
     /**
@@ -28,7 +27,6 @@ public class Fit {
         short heightMan = 187;
         short heightWoman = 170;
 
-        // Расчет веса мужчины и вывод результата
         double manWeight = calculateManWeight(heightMan);
         System.out.println("Optimal weight for a man with height 187 is " + manWeight);
 
