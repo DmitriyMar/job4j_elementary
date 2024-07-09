@@ -13,12 +13,7 @@ public class Fit {
         return (height - 100) * WEIGHT_COEFFICIENT;
     }
 
-    /**
-     * Рассчитывает оптимальный вес для женщины на основе ее роста.
-     *
-     * @param height рост женщины
-     * @return оптимальный вес для женщины
-     */
+
     public static double calculateWomanWeight(short height) {
         return (height - 110) * WEIGHT_COEFFICIENT;
     }
