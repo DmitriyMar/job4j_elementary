@@ -13,7 +13,6 @@ public class Fit {
         return (height - 100) * WEIGHT_COEFFICIENT;
     }
 
-
     public static double calculateWomanWeight(short height) {
         return (height - 110) * WEIGHT_COEFFICIENT;
     }
